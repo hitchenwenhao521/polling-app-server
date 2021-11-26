@@ -15,12 +15,11 @@ spec:
     metadata:
       labels:
         app: polling-server
-        ref: <CI_ENV>
     spec:
       restartPolicy: Always
       imagePullPolicy: IfNotPresent
       containers:
-      - image: registry.qikqiak.com/course/polling-server:<BUILD_TAG>
+      - image: hitchenwenhao521/polling-backend:5.6
         name: polling-server
         imagePullSecrets:
         - name: myreg
