@@ -4,7 +4,7 @@ metadata:
   name: polling-server
   namespace: course
   labels:
-    ref: <CI_ENV>
+    ref: master
 spec:
   selector:
     app: polling-server
